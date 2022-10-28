@@ -1,0 +1,19 @@
+{
+  "ConfigFile": "Local",
+  "Name": "john doe",
+  "Age": 25,
+  "Salary": 335.00,
+  "IsMarried": true,
+  "IncomeTax": 21488845,
+  "WorkingHours": "45:00:00",
+  "Identity": "167a8dfe-04b4-455b-9e97-119a9aed7bc8",
+  "ProfileUri": "https://google.com/",
+  "GlobalKey": "CacheGlobalKey",
+  "ConnectionStrings": {
+    "MsSqlConnection": "__PLACEHOLDER__"
+  },
+
+  "AppSettings": {
+    "Provider": "SqlServer"
+  }
+}

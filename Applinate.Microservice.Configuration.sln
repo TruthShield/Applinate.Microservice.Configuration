@@ -1,0 +1,85 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.32014.148
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{709975EA-7567-47F9-AB94-9B3B5BC67566}"
+	ProjectSection(SolutionItems) = preProject
+		.editorconfig = .editorconfig
+		.gitignore = .gitignore
+		build.cmd = build.cmd
+		build.ps1 = build.ps1
+		build.sh = build.sh
+		.github\workflows\ci.yml = .github\workflows\ci.yml
+		License.md = License.md
+		make-cert.ps1 = make-cert.ps1
+		master-config.json = master-config.json
+		power-clean.bat = power-clean.bat
+		power-clean.ps1 = power-clean.ps1
+		README.md = README.md
+		secrets.json = secrets.json
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{07680DA4-0D20-429D-97C5-CE782B7A910B}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "_build", ".build\_build.csproj", "{A455DC77-B078-4033-BBCD-5BACFD436F04}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Core", "Core", "{B12E3A8E-BECC-4BF2-A12E-012F0E68E387}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Applinate.Microservice.Configuration.Abstractions", "src\Abstractions\Applinate.Microservice.Configuration.Abstractions.csproj", "{F854E2F6-AEEA-4BBE-851F-D46B901C58FC}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Applinate.Microservice.Configuration.Core", "src\Concretions\Core\Implementation\Applinate.Microservice.Configuration.Core.csproj", "{780725F0-BE9F-4834-AE7F-411F4E6E564C}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Applinate.Microservice.Configuration.Core.Tests", "src\Concretions\Core\Tests\Applinate.Microservice.Configuration.Core.Tests.csproj", "{011EF4F9-4CD5-416D-95EA-CDF775BD283F}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Emulator", "Emulator", "{22B312B5-5595-497C-AB6D-DF304C100040}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Applinate.Microservice.Configuration.Emulator", "src\Concretions\Emulator\Implementation\Applinate.Microservice.Configuration.Emulator.csproj", "{87133906-AD6B-408C-A64E-DC3642F399F2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Applinate.Microservice.Configuration.Emulator.Tests", "src\Concretions\Emulator\Tests\Applinate.Microservice.Configuration.Emulator.Tests.csproj", "{2323CED3-53AD-42ED-A459-A875A8237ABB}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A455DC77-B078-4033-BBCD-5BACFD436F04}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A455DC77-B078-4033-BBCD-5BACFD436F04}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F854E2F6-AEEA-4BBE-851F-D46B901C58FC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F854E2F6-AEEA-4BBE-851F-D46B901C58FC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F854E2F6-AEEA-4BBE-851F-D46B901C58FC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F854E2F6-AEEA-4BBE-851F-D46B901C58FC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{780725F0-BE9F-4834-AE7F-411F4E6E564C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{780725F0-BE9F-4834-AE7F-411F4E6E564C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{780725F0-BE9F-4834-AE7F-411F4E6E564C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{780725F0-BE9F-4834-AE7F-411F4E6E564C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{011EF4F9-4CD5-416D-95EA-CDF775BD283F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{011EF4F9-4CD5-416D-95EA-CDF775BD283F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{011EF4F9-4CD5-416D-95EA-CDF775BD283F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{011EF4F9-4CD5-416D-95EA-CDF775BD283F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{87133906-AD6B-408C-A64E-DC3642F399F2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{87133906-AD6B-408C-A64E-DC3642F399F2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{87133906-AD6B-408C-A64E-DC3642F399F2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{87133906-AD6B-408C-A64E-DC3642F399F2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2323CED3-53AD-42ED-A459-A875A8237ABB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2323CED3-53AD-42ED-A459-A875A8237ABB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2323CED3-53AD-42ED-A459-A875A8237ABB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2323CED3-53AD-42ED-A459-A875A8237ABB}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{B12E3A8E-BECC-4BF2-A12E-012F0E68E387} = {07680DA4-0D20-429D-97C5-CE782B7A910B}
+		{F854E2F6-AEEA-4BBE-851F-D46B901C58FC} = {07680DA4-0D20-429D-97C5-CE782B7A910B}
+		{780725F0-BE9F-4834-AE7F-411F4E6E564C} = {B12E3A8E-BECC-4BF2-A12E-012F0E68E387}
+		{011EF4F9-4CD5-416D-95EA-CDF775BD283F} = {B12E3A8E-BECC-4BF2-A12E-012F0E68E387}
+		{22B312B5-5595-497C-AB6D-DF304C100040} = {07680DA4-0D20-429D-97C5-CE782B7A910B}
+		{87133906-AD6B-408C-A64E-DC3642F399F2} = {22B312B5-5595-497C-AB6D-DF304C100040}
+		{2323CED3-53AD-42ED-A459-A875A8237ABB} = {22B312B5-5595-497C-AB6D-DF304C100040}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {74E8EC11-F06C-4224-92D8-A41B16D3853A}
+	EndGlobalSection
+EndGlobal

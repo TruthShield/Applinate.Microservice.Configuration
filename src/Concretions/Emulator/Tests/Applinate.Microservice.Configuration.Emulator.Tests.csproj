@@ -1,0 +1,69 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+
+    <IsPackable>false</IsPackable>
+
+    <OutputType>Library</OutputType>
+
+    <Title>Applinate Microservice Configuration Emulator</Title>
+
+    <Authors>matt-cochran</Authors>
+
+    <Company>Truth Shield</Company>
+
+    <Copyright>Truth Shield, 2022</Copyright>
+
+    <PackageProjectUrl>https://applinate.com</PackageProjectUrl>
+
+    <PackageIcon>applinate-icon-128x128.png</PackageIcon>
+
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+
+    <RepositoryUrl>https://github.com/TruthShield/Applinate.Microservice.Configuration</RepositoryUrl>
+
+    <PackageLicenseFile>License.md</PackageLicenseFile>
+
+    <PackageRequireLicenseAcceptance>True</PackageRequireLicenseAcceptance>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="..\..\..\..\docs\images\applinate-icon-128x128.png">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+    <None Include="..\..\..\..\License.md">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+    <None Include="..\..\..\..\README.md">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Applinate.Microservice.Foundation" Version="0.1.2" />
+    <PackageReference Include="Applinate.Microservice.UnitTestHelper" Version="0.1.0" />
+    <PackageReference Include="FluentAssertions" Version="6.8.0" />
+    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="17.1.0" />
+    <PackageReference Include="xunit" Version="2.4.1" />
+    <PackageReference Include="xunit.runner.visualstudio" Version="2.4.3">
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+      <PrivateAssets>all</PrivateAssets>
+    </PackageReference>
+    <PackageReference Include="coverlet.collector" Version="3.1.2">
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+      <PrivateAssets>all</PrivateAssets>
+    </PackageReference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\Abstractions\Applinate.Microservice.Configuration.Abstractions.csproj" />
+    <ProjectReference Include="..\Implementation\Applinate.Microservice.Configuration.Emulator.csproj" />
+  </ItemGroup>
+
+</Project>
