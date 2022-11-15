@@ -1,6 +1,5 @@
 ﻿namespace Applinate
 {
-    using Microsoft.EntityFrameworkCore.Storage.ValueConversion.Internal;
     using System;
 
     public static class EmulateConfiguration

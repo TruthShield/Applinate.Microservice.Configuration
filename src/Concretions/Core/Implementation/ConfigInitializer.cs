@@ -8,14 +8,14 @@ namespace Applinate.Configuration
     {
         public bool SkipDuringTesting => false;
 
-        public void Initialize(IServiceCollection services, bool testing = false)
+        public void Initialize(bool testing = false)
         {
             if (testing && SkipDuringTesting)
             {
                 return;
             }
 
-            ServiceProvider.RegisterTransient<IConfiguration>(s => new Config());
+            ServiceProvider.Register<IConfiguration>(() => new Config(), InstanceLifetime.Transient);
         }
     }
 }

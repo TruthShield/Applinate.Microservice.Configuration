@@ -57,6 +57,8 @@ class Build : NukeBuild
     ///   - JetBrains Rider            https://nuke.build/rider
     ///   - Microsoft VisualStudio     https://nuke.build/visualstudio
     ///   - Microsoft VSCode           https://nuke.build/vscode
+    
+    static string Version = new Version(0, 2, 0).ToString();
 
     public static int Main () => Execute<Build>(x => x.Test);
 
@@ -221,7 +223,6 @@ class Build : NukeBuild
             );
         });
 
-    static string Version = new Version(0, 1, 0).ToString();
 
     Target Pack => _ => _
       .DependsOn(Test)
