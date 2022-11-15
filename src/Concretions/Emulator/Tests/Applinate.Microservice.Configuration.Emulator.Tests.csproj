@@ -31,6 +31,12 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Content Include="..\..\..\..\secrets.json" Link="secrets.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+
+  <ItemGroup>
     <None Include="..\..\..\..\docs\images\applinate-icon-128x128.png">
       <Pack>True</Pack>
       <PackagePath>\</PackagePath>
