@@ -4,7 +4,7 @@ namespace Tests
     using Applinate.Test;
     using FluentAssertions;
 
-    public class EmulatorTests:TestBase
+    public class EmulatorTests:ApplinateTestBase
     {
         [Fact]
         public void LocalTest()
